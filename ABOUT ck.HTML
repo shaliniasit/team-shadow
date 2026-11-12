@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>About Us</title>
+	</head>
+	
+	
+	
+	
+	<style>
+		 
+	.about {
+		background: rgb(224, 251, 222);
+		background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(173, 252, 163) 100%);
+		padding: 100px 0 20px 0;
+		text-align: center;
+		}
+
+	.about h1 {
+		font-size: 250%;
+		margin-bottom: 20px;
+		}
+
+	.about p {
+		font-size: 100%;
+		color: #323030;
+		max-width: 800px;
+		margin: 0 auto;
+		}
+
+	.about-info {
+		margin: 200& 200%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: left;
+		}
+
+	 
+
+	 
+
+	.about-info p {
+		font-size: 1.3rem;
+		margin: 0 2rem;
+		text-align: justify;
+		}
+
+	button {
+		border: none;
+		outline: 0;
+		 
+		font-size: 1rem;
+		color: white;
+		background-color: #40b736;
+		text-align: center;
+		cursor: pointer;
+		 
+		border-radius: 4px;
+		}
+
+	button:hover {
+		background-color: #1f9405;
+		}
+
+	.team {
+		padding: 30px 0;
+		text-align: center;
+		}
+
+	.team h1 {
+		font-size: 2.5rem;
+		margin-bottom: 20px;
+		}
+
+	.team-cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 15px;
+		margin-top: 20px;
+		}
+
+	.card {
+		background-color: white;
+		border-radius: 6px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+		overflow: hidden;
+		transition: transform 0.2s, box-shadow 0.2s;
+		width: 18rem;
+		height: 25rem;
+		margin-top: 10px;
+		}
+
+	.card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+		}
+
+	.card-img {
+		width: 18rem;
+		height: 12rem;
+		}
+
+	.card-img img {
+		width: 100%;
+		height: 100%;
+		object-fit: fill;
+		}
+
+	.card-info button {
+		margin: 2rem 1rem;
+		}
+
+	.card-name {
+		font-size: 2rem;
+		margin: 10px 0;
+		}
+
+	.card-role {
+		font-size: 1rem;
+		color: #888;
+		margin: 5px 0;
+		}
+
+	.card-email {
+		font-size: 1rem;
+		color: #555;
+		}
+		
+	 
+
+	@media (max-width: 768px){
+		nav {
+			display: block;
+		}
+
+		.logo {
+			text-align: center;
+		}
+
+		.nav-links {
+			margin-top: 1rem;
+			justify-content: space-between;
+		}
+
+		.nav-links li {
+			margin-right: 0;
+		}
+
+		.about h1 {
+			font-size: 2rem;
+		}
+
+		.about p {
+			font-size: 0.9rem;
+		}
+
+		.about-info {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.about-img {
+			width: 60%;
+			height: 60%;
+			margin-bottom: 1rem;
+		}
+
+		.about-info p {
+			margin: 1rem 2rem;
+		}
+
+		.about-info button {
+			margin: 1rem 2rem;
+			width: 10rem;
+		}
+
+		.team {
+			margin: 0 1rem;
+		}
+		}
+		
+			 
+		
+		
+		
+		
+		 
+							
+							
+							
+	</style>
+	<body>
+						<head>
+								<title> My Hospital project  Original</title>
+								 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+								 
+								 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+								 
+								 <link rel="stylesheet" href="main.css">
+							</head>
+								
+									 
+									<body class="w3-light-white">
+			 <!-- TOP NAVBAR SECTION -->
+		 
+			<div class="w3-top" "w3-left-align">
+				<div class="w3-bar w3-blue w3-card ">
+				 
+					<a href="#" class="w3-bar-item w3-button w3-large ">Jms Hospital</a>
+						
+				<!-- Desktop Navigation Links -->
+						<div class="w3-hide-small"> </div>
+							  
+				<!-- Dropdown with Scrollbar -->
+					<div class="w3-dropdown-hover w3-bar-item">
+						<button class="w3-button w3-blue  w3-round">Home&darr;</button>
+							<div class="w3-dropdown-content w3-bar-block w3-card-4 scrollable-dropdown" style="min-width:200px;">
+								  <a href="#" class="w3-bar-item w3-button">About Us</a>
+								   
+								  
+								   
+							</div>
+					</div>
+
+				 <!-- Second Dropdown -->
+							  <div class="w3-dropdown-hover w3-bar-item">
+								<button class="w3-button w3-blue  w3-round">Services&darr;</button>
+								<div class="w3-dropdown-content w3-bar-block w3-card-4 scrollable-dropdown" style="min-width:200px;">
+								  <a href="#" class="w3-bar-item w3-button">Super Speciality</a>
+								  <a href="#" class="w3-bar-item w3-button">Multi Speciality</a>
+								  <a href=" Our Services.html" target="_self" class="w3-bar-item w3-button">Our Services</a>
+								</div>
+							  </div>
+						<button class="w3-button w3-blue"  >
+							<a href="#doctors" class="w3-bar-item w3-button  w3-round">Doctors</a>
+						</button >	
+						<button class="w3-button w3-blue"  >
+							<a href="#Appointment" class="w3-bar-item w3-button  w3-round  w3-round">Appointment</a>
+						</button >	
+						<button class="w3-button w3-blue"  >
+							<a href="#Emergency Helpline" class="w3-bar-item w3-button w3-red w3-round  w3-round">Emergency Helpline</a>
+						</button >	
+							
+						<button class="w3-button w3-blue"  >
+							<a href="ABOUT ck.HTML"  target="_self" class="w3-bar-item w3-button w3-round  w3-round">About</a>
+						</button >
+				</div>
+
+				<!-- Mobile Menu Toggle Button & Checkbox -->
+							<input type="checkbox" id="menu-toggle">
+							<label for="menu-toggle" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large">&#9776;</label>
+
+				<!-- Mobile Navigation Menu Links -->
+							<div class="w3-bar-block w3-blue mobile-menu w3-hide-large w3-hide-medium" style="display:none;">
+							  <a href="#Home" class="w3-bar-item w3-button  w3-round">Home</a>
+							  <a href="#services" class="w3-bar-item w3-button  w3-round">Services</a>
+							  <a href="#doctors" class="w3-bar-item w3-button  w3-round	">Doctors</a>
+							  <a href="#Appointment" class="w3-bar-item w3-button  w3-round">Appointment</a>
+							  <a href="#Emergency-Helpline" class="w3-bar-item w3-button ">Emergency Helpline</a>
+							  <a href="#Address" class="w3-bar-item w3-button  w3-round">About</a>
+							</div>
+						  </div>
+						  
+							 
+							
+							
+						<section class="about">
+								<h1>About <font color="blue">Us</font></h1>
+								<h2 align="center">Why You Should Trust Us?   <font color="blue">Get Know </font></h2>
+								<h2  align="center"> <font color="blue">About </font>Us!</h2>	 
+							<div class="about-info">
+							   
+								<div>
+								 <h2 align="center"  style="font-family: 'Book Antiqua', sans-serif;"><q><u>Core Functions</u></q></h2><br>
+								 
+									<p><b>1. <i>Diagnosis and Treatment</i>:</b> Using medical technology and clinical staff to find and
+										cure illnesses or injuries.</p><br>
+									<p><b>2. <i>Emergency Care</i>:</b> Operating 24/7 emergency departments for urgent health crises 
+									<br>	like accidents or severe trauma.</p><br>
+									<p><b>3. <i>Inpatient and Outpatient Care</i>:</b> Housing patients who need overnight stays or 
+										providing same-day treatment and minor procedures</p><br>
+									<p><b>4. <i>Training and Research</i>:</b> Acting as centers for medical education, 
+										nursing training, and clinical research</p><br>
+									<p><b>5. <i>Public Health</i>:</b> Supporting community wellness through immunizations and hygiene education</p><br><br>
+									
+									<h2 align="center"  style="font-family: 'Book Antiqua', sans-serif;"><q><u>The following types of doctors are available here.</u></q></h2><br>
+									
+									<p><b>1.(Brain Doctors)<i> Neurologist:</i></b>
+										A medical doctor who diagnoses and treats disorders of the brain, 
+										spinal cord, and nervous system (such as strokes, Alzheimer's, or migraines) 
+										using medications and therapies.</p><br>
+									<p><b>2.(Heart Doctors)<i> Cardiologist:</i></b> 
+										A physician who specializes in diagnosing and treating 
+										diseases of the heart and blood vessels, 
+										such as heart failure or high blood pressure.</p><br>
+									<p><b>3.(Dentist)<i> Dentist:</i></b> 
+										A healthcare professional specialized in the diagnosis, 
+										prevention, and treatment of conditions affecting the teeth, gums, and mouth.</p><br>
+									<p><b>4.(Skin Doctor)<i> Dermatologist:</i></b> 
+										A medical doctor who specializes in conditions 
+										affecting the skin, hair, and nails, ranging from acne and eczema to skin cancer.</p><br>
+									<p><b>5.(Eye Doctor)<i> Ophthalmologist:</i></b> 
+										A medical doctor who specializes in eye and vision care. 
+										They can prescribe medication, perform eye surgeries, and fit eyeglasses or contact lenses.</p><br>
+									<p><b>6.(Bone Doctor)<i> Orthopedic Surgeon / Orthopedist:</i></b> 
+										A doctor who specializes in treating 
+										the musculoskeletal system, which includes bones, joints, ligaments, 
+										tendons, and muscles. They treat fractures, sports injuries, and degenerative 
+										diseases like arthritis.</p><br>
+									
+									<button>Read More...</button>
+								</div>
+							</div>
+						</section>
+						
+					<table width="98%"  class="w3-margin-left  ">	
+					<tr>
+							<td colspan="9" bgcolor="#111844"> <marquee><font color="white"><big>/***Thank You For Visiting Here***/</big></font></marquee></td>
+					</tr> 
+						 
+							
+						 	
+						 		  
+				</table>	
+							
+											
+
+		<section class="team">
+			<h1>Meet Our Team</h1>
+				<div class="team-cards ">
+          
+					<div class="card w3-margin-left">
+						<div class="card-img">
+									<img src="ckg.png" alt="Chandu">
+						</div>
+								<div class="card-info">
+									<h2 class="card-name">Dr. Chandra </h2>
+									<p class="card-role">Orthopedic Surgeon</p>
+									<p class="card-email">chandu123@gamil.com</p>
+									<p><button class="button">MBBS, MD (Orthopedics) -12 years of experience</button></p>
+								</div>
+					</div>
+					
+					
+					<div class="card w3-margin-left">
+						<div class="card-img">
+									<img src="T3.png" alt="Chandu">
+						</div>
+								<div class="card-info">
+									<h2 class="card-name">Dr. Sonali </h2>
+									<p class="card-role">Brain Specialist</p>
+									<p class="card-email">sonali126@gamil.com</p>
+									<p><button class="button">MBBS, MD (Craniologists) -12 years of experience</button></p>
+								</div>
+					</div>
+					
+
+					<div class="card w3-margin-left">
+						<div class="card-img">
+									<img src="T4.png" alt="Chhaya">
+						</div>
+								<div class="card-info">
+									<h2 class="card-name">Dr. Chhaya Bansal</h2>
+									<p class="card-role">Neurologist</p>
+									<p class="card-email">chhaya124@gamail.com</p>
+									<p><button class="button">MBBS, MS (Neurology) -10 years of experience</button></p>
+								</div>
+					</div>
+						  
+					<div class="card w3-margin-left">
+						<div class="card-img">
+									<img src="Ri420.png" alt="Ritik">
+						</div>
+								<div class="card-info">
+									<h2 class="card-name">Dr. Ritik Gupta</h2>
+									<p class="card-role">Senior Cardiologist</p>
+									<p class="card-email">ritik145@gamil.com</p>
+									<p><button class="button">MBBS, MD (Cardiology) -15 years of experience</button></p>
+								</div>
+					</div>
+				</div>
+		</section>
+						
+						
+						<!-- FOOTER SECTION -->
+			  <footer class="w3-container w3-dark-grey w3-padding-32">
+				<div class="w3-row-padding">
+				  
+				   <!-- Footer Column 1 -->
+					
+						<div class="w3-col l3 m6 s12 w3-margin-bottom">
+							<h3>
+								<i class="fa-solid fa-house "></i>
+								Home
+							</h3>
+
+							<p>
+								<a href="#" class="w3-text-light-grey" style="text-decoration:none;">
+									<i class="fa-solid fa-circle-info w3-text-teal"></i>
+									&nbsp; About Us
+								</a>
+							</p>
+
+							<p>
+								<a href="#" class="w3-text-light-grey" style="text-decoration:none;">
+									<i class="fa-solid fa-bullseye w3-text-teal"></i>
+									&nbsp; Vision & Mission
+								</a>
+							</p>
+						</div>
+
+
+				   <!-- Footer Column 2 -->
+					<div class="w3-col l3 m6 s12 w3-margin-bottom">
+						<h3>Services</h3>
+
+						<p>
+							<i class="fa-solid fa-hospital w3-text-teal w3-large"></i>
+							<a href="#" class="w3-text-light-grey" style="text-decoration:none;">
+								Super Speciality
+							</a>
+						</p>
+
+						<p>
+							<i class="fa-solid fa-stethoscope w3-text-teal w3-large"></i>
+							<a href="#" class="w3-text-light-grey" style="text-decoration:none;">
+								Multi-functional
+							</a>
+						</p>
+
+						<p>
+							<i class="fa-solid fa-heart-pulse w3-text-teal w3-large"></i>
+							<a href="#" class="w3-text-light-grey" style="text-decoration:none;">
+								Our Services
+								</a>
+						</p>
+					</div>
+				  <!-- Footer Column 3 -->
+					<div class="w3-col l3 m6 s12 w3-margin-bottom">
+					<h3>Appointment</h3>
+
+					<p>
+						<i class="fa-solid fa-user-doctor w3-text-teal w3-large"></i>
+						<a href="#" class="w3-text-light-grey" style="text-decoration:none;">
+							Contact Related Disorder
+						</a>
+					</p>
+
+					<p>
+						<i class="fa-solid fa-calendar-check w3-text-teal w3-large"></i>
+						<a href="#" class="w3-text-light-grey" style="text-decoration:none;">
+							Booking
+						</a>
+					</p>
+
+				</div>
+
+				  <!-- Footer Column 4 -->
+					<div class="w3-col l3 m6 s12 w3-margin-bottom">
+					<h3 id="Emergency Helpline">Emergency-Helpline</h3>
+
+					<p>
+						<i class="fa-solid fa-clock w3-text-teal w3-large"></i>
+						<a href="#24/7 contact" class="w3-text-light-grey" style="text-decoration:none;">
+							24/7 Contact
+						</a>
+					</p>
+
+					<p>
+						<i class="fa-solid fa-phone w3-text-teal w3-large"></i>
+						<a href="tel:+915225635625" class="w3-text-light-grey" style="text-decoration:none;">
+							+91 52 2563 56 25
+						</a>
+					</p>
+
+					<p>
+						<i class="fa-solid fa-phone-volume w3-text-teal w3-large"></i>
+						<a href="tel:+9152463525" class="w3-text-light-grey" style="text-decoration:none;">
+							+91 52 4635 25
+						</a>
+					</p>
+				</div>
+				  
+				  <!-- Footer Column 5 -->
+					 <div class="w3-col l3 m6 s12 w3-margin-bottom">
+						<h4>Social Links</h4>
+
+						<p>
+							<i class="fa-brands fa-instagram w3-text-teal w3-large"></i>
+							<a href="#" class="w3-text-light-grey" style="text-decoration:none;">
+								Instagram
+							</a>
+						</p>
+
+						<p>
+							<i class="fa-brands fa-facebook w3-text-teal w3-large"></i>
+							<a href="#" class="w3-text-light-grey" style="text-decoration:none;">
+								Facebook
+							</a>
+						</p>
+
+						<p>
+							<i class="fa-brands fa-twitter w3-text-teal w3-large"></i>
+							<a href="#" class="w3-text-light-grey" style="text-decoration:none;">
+								Twitter
+							</a>
+						</p>
+					</div>
+				  
+				    <!-- Footer Column 6 -->
+					<div class="w3-col l3 m6 s12 w3-margin-bottom">
+					<h4>About</h4>
+
+					<p>
+						<i class="fa-solid fa-map-location-dot w3-text-teal w3-large"></i>
+						<a href="#" class="w3-text-light-grey" style="text-decoration:none;">
+							Journey
+						</a>
+					</p>
+
+					<p>
+						<i class="fa-solid fa-users w3-text-teal w3-large"></i>
+						<a href="#" class="w3-text-light-grey" style="text-decoration:none;">
+							Founder
+						</a>
+					</p>
+				</div>
+				  
+				   
+				  <!-- Footer Column 7 -->
+				  
+					<div class="w3-col l3 m6 s12 w3-margin-bottom">
+						<h4> Address </h4>
+
+						<p>
+							<i class="fa-solid fa-location-dot w3-text-teal w3-large"></i>
+							&nbsp; NH30, Banda Road, Jasra, Jasra Allahabad, UP, India
+						</p>
+
+						<p>
+							<i class="fa-solid fa-phone w3-text-teal w3-large"></i>
+							&nbsp; +91 11 2345 6789
+						</p>
+
+						<p>
+							<i class="fa-solid fa-envelope w3-text-teal w3-large"></i>
+							&nbsp; info@JMShospital.com
+						</p>
+
+						<p>
+							<i class="fa-solid fa-clock w3-text-teal w3-large"></i>
+							&nbsp; Emergency: 24/7 Uplabdh
+						</p>
+					</div>
+
+ 
+				</div>
+			</footer>
+ 
+				</body>
+		  
+			<!-- Footer -->
+			<footer class="w3-center w3-teal  w3-padding-32 w3-row-padding-16">
+				<p>&copy; 2026 JAI MAA SHARDA Hospital. All Rights Reserved.</p>
+			</footer>
+			
+		 
+		
+	</body>
+
+</html>
